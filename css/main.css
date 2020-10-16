@@ -6,7 +6,8 @@
 
 html {
   box-sizing: border-box;
-  font: "font-family", "Overpass, sans-serif";
+  font-family: 'Overpass', sans-serif;
+  color: #fff;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -18,9 +19,20 @@ html {
 }
 
 ul {
+  list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   margin: 0;
   padding: 0;
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(#ff9500, #ff5e3a);
+}
+
+i {
+  width: 8rem;
+  fill: #fff;
 }
