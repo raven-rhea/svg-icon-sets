@@ -6,7 +6,7 @@
 
 html {
   box-sizing: border-box;
-  font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
   color: #fff;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -18,10 +18,22 @@ html {
   box-sizing: inherit;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem
+}
+
+li {
+  text-align: center;
+}
+
 ul {
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-items: center;
   margin: 0;
   padding: 0;
@@ -32,7 +44,34 @@ body {
   background-image: linear-gradient(#ff9500, #ff5e3a);
 }
 
-i {
+section {
+  margin: 1.5rem;
+  display: flex;
+}
+
+.icon {
   width: 8rem;
   fill: #fff;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  padding: .75em;
+  border: .2em solid #fff;
+  margin-bottom: 5rem;
+}
+
+a:hover {
+  background-color: #fff;
+  color: #ff5e3a;
+}
+
+@media only screen and (min-width: 38em) {
+
+  ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
 }
